@@ -1,5 +1,6 @@
 sudo: required
-beta: trusty
+services:
+  -docker
 
 language: ruby
 
