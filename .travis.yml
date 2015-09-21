@@ -1,8 +1,7 @@
 language: ruby
 
 sudo: required
-services:
-  - docker
+beta: trusty
 
 before_install:
 - docker pull carlad/sinatra
