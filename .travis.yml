@@ -4,6 +4,8 @@ sudo: required
 beta: trusty
 
 before_install:
+- sudo apt-get -y update
+- sudo apt-get -y upgrade lxc-docker
 - docker pull carlad/sinatra
 - docker run -d -p 127.0.0.1:80:4567 carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec foreman start;"
 - docker ps -a
